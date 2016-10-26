@@ -23,16 +23,16 @@ public class DBCon {
             connInfo.put("user", "root");
             connInfo.put("password", "123");
             
-            conn  = DriverManager.getConnection("jdbc:mysql://localhost/?", connInfo);
+            conn  = DriverManager.getConnection("jdbc:mysql://localhost/work", connInfo);
             
-            pstmt = conn.prepareStatement("show databases;");
+            pstmt = conn.prepareStatement("select*from employee;");
             
             if(pstmt.execute()) {
                 rs = pstmt.getResultSet();                                
                 
                 while (rs.next()) {
-                    //System.out.println(rs.getString(1));
-                    System.out.println(rs.getString("Database"));
+                    System.out.println(rs.getString(1)+" "+rs.getString(2));
+                    //System.out.println(rs.getString("employeeID"));
                 }
             }                                    
         }
