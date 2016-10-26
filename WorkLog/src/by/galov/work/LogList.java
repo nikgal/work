@@ -1,12 +1,8 @@
 package by.galov.work;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Scanner;
 
 public class LogList {
 	private static ArrayList<Log> logList = new ArrayList<>();

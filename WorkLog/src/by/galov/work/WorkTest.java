@@ -14,10 +14,11 @@ public class WorkTest {
 		Calendar c = new GregorianCalendar(2016,10,25);
 		Log currentLog = new Log(currentTask,c);
 		
-		LogList.addLog(currentLog);
-		LogList.addLog(currentLog);
+		//LogList.addLog(currentLog);
+		//LogList.addLog(currentLog);
+		//LogList.fileLog(currentLog);
+		DBCon.dbCon();
 		
-		LogList.fileLog(currentLog);
 	}
 
 }
