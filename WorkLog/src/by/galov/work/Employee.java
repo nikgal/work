@@ -5,6 +5,9 @@ public class Employee {
 	public Employee(String name){
 		this.setName(name);
 	}
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
 	public String getName() {
 		return name;
 	}

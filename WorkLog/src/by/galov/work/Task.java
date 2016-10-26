@@ -22,6 +22,7 @@ public class Task {
 		this.labourContent=labourContent;
 		this.taskName=taskName;
 	}
+	public Task(){};
 
 	
 

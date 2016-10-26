@@ -9,6 +9,9 @@ public class Log {
 		this.setCurrentTask(currentTask);
 		this.setCurrentDate(currentDate);
 	}
+	public Log() {
+		// TODO Auto-generated constructor stub
+	}
 	public Task getCurrentTask() {
 		return currentTask;
 	}
