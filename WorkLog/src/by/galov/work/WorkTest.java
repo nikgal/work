@@ -16,8 +16,8 @@ public class WorkTest {
 		
 		LogList.addLog(currentLog);
 		LogList.addLog(currentLog);
-
-		LogList.showLog();
+		
+		LogList.fileLog(currentLog);
 	}
 
 }

@@ -2,6 +2,8 @@ package by.galov.work;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,12 +19,13 @@ public class LogList {
 		}
 	}
 	public static void fileLog(Log lg){
-		File f = new File("loglist.txt");
 		try {
-			Scanner fscanner = new Scanner(f);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
+			FileWriter writer = new FileWriter("loglist.txt",false);
+			writer.append("asdf");
+			writer.flush();
+		} catch (IOException e) {
 			e.printStackTrace();
+			System.out.println("err");
 		}
 	}
 }
